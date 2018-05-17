@@ -1,0 +1,1 @@
+int compare_function(double *a, double *b);

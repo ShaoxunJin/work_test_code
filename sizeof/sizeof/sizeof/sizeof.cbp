@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="sizeof" />
+		<Option pch_mode="2" />
+		<Option compiler="msvc8" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="sizeof" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug Win32" />
+				<Option type="1" />
+				<Option compiler="msvc8" />
+				<Compiler>
+					<Add option="/DWIN32" />
+					<Add option="/D_DEBUG" />
+					<Add option="/D_CONSOLE" />
+					<Add option="/W3" />
+					<Add option="/ZI" />
+					<Add option="/Od" />
+					<Add option="/MDd" />
+					<Add directory="D:/jin/boost/boost_1_58_0" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="D:/jin/boost/boost_1_58_0" />
+				</ResourceCompiler>
+				<Linker>
+					<Add directory="D:/jin/boost/boost_1_58_0" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="sizeof" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release Win32" />
+				<Option type="1" />
+				<Option compiler="msvc8" />
+				<Compiler>
+					<Add option="/DWIN32" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_CONSOLE" />
+					<Add option="/W3" />
+					<Add option="/Zi" />
+					<Add option="/MD" />
+				</Compiler>
+				<Linker>
+					<Add option="/INCREMENTAL:NO" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="ReadMe.txt" />
+		<Unit filename="boost.h" />
+		<Unit filename="boost_t.cpp" />
+		<Unit filename="cartensian_to_polar.cpp" />
+		<Unit filename="cartensian_to_polar.h" />
+		<Unit filename="case_test.cpp" />
+		<Unit filename="case_test.h" />
+		<Unit filename="char_test.cpp" />
+		<Unit filename="char_test.h" />
+		<Unit filename="class_test.cpp" />
+		<Unit filename="class_test.h" />
+		<Unit filename="count_if.cpp" />
+		<Unit filename="count_if.h" />
+		<Unit filename="dec_to_hex.cpp" />
+		<Unit filename="dec_to_hex.h" />
+		<Unit filename="endian_test.cpp" />
+		<Unit filename="endian_test.h" />
+		<Unit filename="file_read_write.cpp" />
+		<Unit filename="file_read_write.h" />
+		<Unit filename="format_test.cpp" />
+		<Unit filename="format_test.h" />
+		<Unit filename="head_file.h" />
+		<Unit filename="limit_value_test.cpp" />
+		<Unit filename="limit_value_test.h" />
+		<Unit filename="macro_test.cpp" />
+		<Unit filename="macro_test.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="map_pair.h" />
+		<Unit filename="memory_operation.cpp" />
+		<Unit filename="memory_operation.h" />
+		<Unit filename="overload_function.cpp" />
+		<Unit filename="overload_function.h" />
+		<Unit filename="pair_test.cpp" />
+		<Unit filename="size_of.cpp" />
+		<Unit filename="size_of.h" />
+		<Unit filename="sprintf.cpp" />
+		<Unit filename="sprintf.h" />
+		<Unit filename="stdafx.cpp" />
+		<Unit filename="stdafx.h" />
+		<Unit filename="string_test.cpp" />
+		<Unit filename="string_test.h" />
+		<Unit filename="template.cpp" />
+		<Unit filename="template.h" />
+		<Unit filename="time_test.cpp" />
+		<Unit filename="time_test.h" />
+		<Unit filename="try_catch.cpp" />
+		<Unit filename="try_catch.h" />
+		<Unit filename="type_tc.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

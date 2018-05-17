@@ -1,0 +1,156 @@
+---- sample_period Matches (28 in 3 files) ----
+Fft_calculate_main.cpp (d:\work_directory_c\fft\fft\fft):	int sample_period = 0.0004;
+Fft_calculate_main.cpp (d:\work_directory_c\fft\fft\fft):	//GNMA_spectrum(num, 1, nbr_freq_points, sample_period,)
+Fft_calculate_main.cpp (d:\work_directory_c\fft\fft\fft):	int sample_period = 0.0004;
+Fft_calculate_main.cpp (d:\work_directory_c\fft\fft\fft):	error_code = GNMA_spectrum(num, nbr_frames, nbr_freq_points, sample_period,
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):			 double sample_period, 采样周期
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):								  double sample_period, double start_fr/*arg5C*/,
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):			if(nbr_fre_trace <=0 || sample_period < 4e-4 || start_fr < 0 || start_fr >= stop_fr)
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):				sample_period value = %e, start_fr = %e, stop_fr = %e", nbr_fre_trace,
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):				sample_period, start_fr, stop_fr);
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):			iStartIndex = (int)(start_fr * (nbr_fre_trace - 1) * 2 * sample_period);
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):			iStopIndex = (int)(stop_fr * (nbr_fre_trace - 1) * 2 * sample_period)+1;
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):			 double sample_period, 采样周期
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):								     int nbr_fre_trace,  double sample_period,
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):		if(nbr_fre_trace <=0 || sample_period < 4.0e-4 || start_fr <= 0 || start_fr >=stop_fr)
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):			sample_period value = %e, start_fr = %e, stop_fr = %e", nbr_fre_trace,
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):			sample_period, start_fr, stop_fr);
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):			iStartIndex = (int)(start_fr * (nbr_fre_trace - 1) * 2 * sample_period);
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):			iStopIndex = (int)(stop_fr * (nbr_fre_trace - 1) * 2 * sample_period)+1;
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):			 double sample_period, 采样周期
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):									   int nbr_fre_trace, double sample_period,
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):		if(nbr_fre_trace <=0 || sample_period < 4e-4 || bw <= 0/* || bw >=amp_stop_fr*/)
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):			sample_period value = %e, bw = %e, amp_stop_fr = %e", nbr_fre_trace,
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):			sample_period, bw, amp_stop_fr);
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):			iStart = (int)(bw * (nbr_fre_trace -1) * 2 * sample_period);
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):			iStop = (int)(amp_stop_fr * (nbr_fre_trace -1) * 2 * sample_period) + 1;
+GNMA.h (d:\work_directory_c\fft\fft\fft):										IN double sample_period,/*采用周期，我们公司一般为400微秒的整数倍*/
+GNMA.h (d:\work_directory_c\fft\fft\fft):											IN double sample_period,/*采样周期，我们公司一般为400微秒的整数倍*/
+GNMA.h (d:\work_directory_c\fft\fft\fft):												   IN double sample_period,/*采样周期，我们公司一般为400微秒的整数倍*/
+---- nbr_freq_points Matches (4 in 1 files) ----
+Fft_calculate_main.cpp (d:\work_directory_c\fft\fft\fft):	int nbr_freq_points;				//频率点个数
+Fft_calculate_main.cpp (d:\work_directory_c\fft\fft\fft):	error_code = GNMA_freq_size(num+1, 1, &nbr_freq_points);
+Fft_calculate_main.cpp (d:\work_directory_c\fft\fft\fft):	error_code = GNMA_spectrum(num, nbr_frames, nbr_freq_points, sample_period,inputdata,outputdata,
+Fft_calculate_main.cpp (d:\work_directory_c\fft\fft\fft):	error_code = GNMA_transfer(nbr_freq_points, pdPxx, pdPyy, psPxy,
+---- sqrt Matches (8 in 2 files) ----
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):			x_win[i].Re = sqrt(8 / 3.0) * hanning[i - j * fft_points] * pdX[i % fft_points + j * iNbr_points / iNbr_frames];
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):			y_win[i].Re = sqrt(8 / 3.0) * hanning[i - j * fft_points] * pdY[i % fft_points + j * iNbr_points / iNbr_frames];
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):		dTemp_amp = sqrt(sTemp_tf[i].Re * sTemp_tf[i].Re + sTemp_tf[i].Im * sTemp_tf[i].Im);
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):				mov_std_dev[i] = sqrt(mov_std_dev[i]);
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):				mov_std_dev[i] = sqrt(mov_std_dev[i]);
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):				mov_std_dev[i] = sqrt(mov_std_dev[i]);
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):		*pdStdDev = sqrt((dSum - dTemp) / (iNumber - 1));
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):            *pdNRE = sqrt(dNRE_temp);
+---- NULL Matches (147 in 6 files) ----
+ADAE.h (d:\work_directory_c\fft\fft\fft):    #define ADAE_INVALID_PID        NULL
+ADAE.h (d:\work_directory_c\fft\fft\fft):    #define ADAE_INVALID_SHM_ID     NULL
+ADAE.h (d:\work_directory_c\fft\fft\fft):    #define ADAE_INVALLD_TID        NULL
+ADAE.h (d:\work_directory_c\fft\fft\fft):    #define ADAE_INVALID_FD         NULL
+ADAE.h (d:\work_directory_c\fft\fft\fft):    #define ADAE_INVALID_TIMER_ID   NULL
+Fft_calculate_main.cpp (d:\work_directory_c\fft\fft\fft):	FILE *file = NULL;
+Fft_calculate_main.cpp (d:\work_directory_c\fft\fft\fft):	if(NULL == file)
+Fft_calculate_main.cpp (d:\work_directory_c\fft\fft\fft):	FILE *file_write_ptr_pdxx = NULL;	
+Fft_calculate_main.cpp (d:\work_directory_c\fft\fft\fft):	if(file_write_ptr_pdxx == NULL)
+Fft_calculate_main.cpp (d:\work_directory_c\fft\fft\fft):	FILE *file_write_ptr = NULL;	
+Fft_calculate_main.cpp (d:\work_directory_c\fft\fft\fft):	if(file_write_ptr == NULL)
+Fft_calculate_main.cpp (d:\work_directory_c\fft\fft\fft):	FILE *file_write_ptr_pdPhase = NULL;	
+Fft_calculate_main.cpp (d:\work_directory_c\fft\fft\fft):	if(file_write_ptr_pdPhase == NULL)
+Fft_calculate_main.cpp (d:\work_directory_c\fft\fft\fft):	FILE *file_write_ptr_pdCoherence = NULL;	
+Fft_calculate_main.cpp (d:\work_directory_c\fft\fft\fft):	if(file_write_ptr_pdCoherence == NULL)
+Fft_calculate_main.cpp (d:\work_directory_c\fft\fft\fft):	FILE *file_write_ptr_frequency = NULL;	
+Fft_calculate_main.cpp (d:\work_directory_c\fft\fft\fft):	if(file_write_ptr_frequency == NULL)
+GNMA.cpp (d:\work_directory_c\fft\fft\fft)://	char *psErrorText = NULL;
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	if(NULL == psInput)
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	char *psErrorText = NULL;
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	if(NULL == psInput_str || NULL == psOut_str)
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	if(NULL != psOut_str && 0 == iErrorCode)
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	char *psErrorText = NULL;
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	if(NULL == piNbr_freq_points && 0 == iErrorCode)
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	//	char *psErrorText = NULL;
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	double *hanning = NULL;
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	GNMA_complex_type *x_win = NULL;
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	GNMA_complex_type *y_win = NULL;
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	GNMA_complex_type *x_fft = NULL;
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	GNMA_complex_type *y_fft = NULL;
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):		if(NULL == pdX || NULL == pdY || NULL == pdFreqs || NULL == pdPxx || NULL == pdPyy || NULL == psPxy)
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):		if(NULL == (x_win = (GNMA_complex_type *) malloc(iNbr_frames * fft_points * sizeof(GNMA_complex_type))))
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):		if(NULL == (y_win = (GNMA_complex_type *) malloc(iNbr_frames * fft_points * sizeof(GNMA_complex_type))))
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):		if(NULL == (hanning = (double *) malloc(iNbr_frames * fft_points * sizeof(double))))
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	FILE *file_write_ptr_x_win = NULL;	
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	if(file_write_ptr_x_win == NULL)
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):		if(NULL == (x_fft = (GNMA_complex_type *) malloc(iNbr_frames * fft_points * sizeof(GNMA_complex_type))))
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):		if(NULL == (y_fft = (GNMA_complex_type *) malloc(iNbr_frames * fft_points * sizeof(GNMA_complex_type))))
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	char *psErrorText = NULL;
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	GNMA_complex_type *sTemp_tf = NULL;
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):		if(NULL == pdCoherence || NULL == pdMagnitude || NULL == pdPxx ||
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):			NULL == psPxy || NULL == pdPyy || NULL == pdPhase)
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):		if(NULL == (sTemp_tf = (GNMA_complex_type *) malloc(iNbr_freq_points * sizeof(GNMA_complex_type))))
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	char *psErrorText = NULL;
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):		if((NULL == mov_avg) || (NULL == mov_std_dev) || NULL == input)
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	char *psErrorText = NULL;
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	if(NULL == pdData || NULL == pdMean || NULL == pdStdDev)
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	char *psErrorText = NULL;
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	if(NULL == pdData || NULL == pDPeak)
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	char *psErrorText = NULL;
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	if(NULL == pdData || NULL == pdMax)
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	char *psErrorText = NULL;
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	if(NULL == pdData || NULL == pdMin)
+GNMA.cpp (d:\work_directory_c\fft\fft\fft)://	char *psErrorText = NULL;
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	if(NULL == pdData || NULL == pdMin || NULL == pdMean || NULL == pdStdDev \
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):		|| NULL == pdMax|| NULL == pdPeak|| NULL == pdMean3Sigma)
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	char *psErrorText = NULL;
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):		if(NULL == freq_point || NULL == magnitude || NULL == if_found || NULL == bw)
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	char *psErrorText = NULL;
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	if(NULL == freq_point || NULL == magnitude || NULL == phase || NULL == if_found || NULL == ph_mar || NULL == ph_fre)
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	char *psErrorText = NULL;
+GNMA.cpp (d:\work_directory_c\fft\fft\fft):	if(NULL == freq_point || NULL == magnitude || NULL == phase || NULL == if_found || NULL == ampl_mar || NULL == ampl_freq)
+Smee.h (d:\work_directory_c\fft\fft\fft):#ifndef NULL
+Smee.h (d:\work_directory_c\fft\fft\fft):    #define NULL        0
+Smee_type.h (d:\work_directory_c\fft\fft\fft):    #define SMEE_INVALID_PID        NULL
+Smee_type.h (d:\work_directory_c\fft\fft\fft):    #define SMEE_INVALID_SHM_ID     NULL
+Smee_type.h (d:\work_directory_c\fft\fft\fft):    #define SMEE_INVALLD_TID        NULL
+Smee_type.h (d:\work_directory_c\fft\fft\fft):    #define SMEE_INVALID_FD         NULL
+Smee_type.h (d:\work_directory_c\fft\fft\fft):    #define SMEE_INVALID_TIMER_ID   NULL
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):    if (NULL == qTmp)
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):    char *psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):		            //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft): 		             //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):        	            //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):        	            //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):		            //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):		            //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):		            //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):		            //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):		            //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):		            //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):		            //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):		            //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):    char *psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):        	        //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):                //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):                    //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):		        //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):			        //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):		        //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):			        //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):    char *psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):    double *pdPxx_temp = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):    double *pdPyy_temp = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):    GNMA_complex_type *psPxy_temp = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):	        //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):	        //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):    char *psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):	GNMA_complex_type *psComplex = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):	        //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):	        //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):    char *psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):		        //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):    char *psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):	        //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):	        //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):		        //psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):	char *psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):		//psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):			//psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):	char *psErrorText = NULL;
+WRGN.cpp (d:\work_directory_c\fft\fft\fft):		//psErrorText = NULL;

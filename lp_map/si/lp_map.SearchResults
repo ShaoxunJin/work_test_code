@@ -1,0 +1,5 @@
+---- time Matches (6 in 1 files) ----
+Lp_map.cpp (d:\work_directory_c\lp_map\lp_map\lp_map):#include<time.h>
+Lp_map.cpp (d:\work_directory_c\lp_map\lp_map\lp_map):	time_t current_time;	//显示系统自定义时刻到当前时刻的时间间隔
+Lp_map.cpp (d:\work_directory_c\lp_map\lp_map\lp_map):	current_time = time(0);
+Lp_map.cpp (d:\work_directory_c\lp_map\lp_map\lp_map):	cout<<"sec = "<<current_time<<endl;

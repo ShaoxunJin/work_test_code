@@ -1,0 +1,42 @@
+<ui version="4.0" >
+ <class>display_lneClass</class>
+ <widget class="QWidget" name="display_lneClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>display_lne</string>
+  </property>
+  <widget class="QLineEdit" name="IDC_Lne_Display" >
+   <property name="geometry" >
+    <rect>
+     <x>60</x>
+     <y>200</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="IDC_Btn_Display" >
+   <property name="geometry" >
+    <rect>
+     <x>70</x>
+     <y>170</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Display</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections/>
+</ui>

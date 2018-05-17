@@ -1,0 +1,8 @@
+figure;
+subplot(2,1,1);
+plot(frequency,pdMagnitude);
+xlabel('frequency');ylabel('Mag')
+grid on;
+subplot(2,1,2);
+plot(frequency,pdPhase);
+grid on;
